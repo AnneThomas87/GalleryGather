@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Gather</title>
+    <link rel="stylesheet" href="homePageUX.css">
+    <script src="homePageUX.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+              <img  src="Asset/Gallery.png" alt="Logo">
+            </div>
+            <div class="selectAll">
+            </div>
+             <img class="Coeur" src="Asset/Coeur.png" alt="coeur">
+          </nav>
+          
+    </header>
+  
+    <main>
+        <h1 class="OFK">On fait quoi aujourd’hui ?</h1>
+   
+        <div class="Liste">
+            <div id="map"></div>
+  <ul class="custom-checkbox1">
+            <ul class="custom-checkbox">
+                <li><strong>Dates</strong></li>
+                <li>
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">Aujourd'hui</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2">Demain</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox3">
+                    <label for="checkbox3">Ce weekend</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4">Choisissez une date</label>
+                </li>
+            </ul>
+    
+            <ul class="custom-checkbox">
+                <li><strong>Prix</strong></li>
+                <li>
+                    <input type="checkbox" id="prixLibre">
+                    <label for="prixLibre">Libre</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="prixPayant">
+                    <label for="prixPayant">Payant</label>
+                </li>
+            </ul>
+    
+            <ul class="custom-checkbox">
+                <li><strong>Catégorie</strong></li>
+                <li>
+                    <input type="checkbox" id="categorieElectro">
+                    <label for="categorieElectro">Electro</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="categorieHipHop">
+                    <label for="categorieHipHop">HipHop</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="categorieClassique">
+                    <label for="categorieClassique">Classique</label>
+                </li>
+            </ul>
+        </ul>
+        </div>
+    </main>
+    <h2 class="event">Evénements a Marseille</h2>
+
+    <div class="container">
+
+        <div class="presentation spectacle" >
+            <img class="expo1" src="Asset/expo1.jpg" alt="">
+            <div class="detail">
+           <h4 class="detail1">Les ventes se terminent bientot</h4>
+           <h4>Atelier avec les enfants " Initiation a la peinture "</h4>
+           <h5>aujourd’hui a 11h jusqu'a 22h</h5> 
+          <h5>Libre</h5>
+        </div>
+      </div>
+      <div class="presentation spectacle">
+            <img class="expo1" src="Asset/expo1.jpg" alt="">
+            <div class="detail">
+           <h4 class="detail1">Les ventes se terminent bientot</h4>
+           <h4>Atelier avec les enfants " Initiation a la peinture "</h4>
+           <h5>aujourd’hui a 11h jusqu'a 22h</h5> 
+          <h5>Libre</h5>
+        </div>
+        </div>
+    </div> 
+<!-- fin du container  -->
+<div class="container">
+    <div class="presentation concert">
+        <img class="expo1" src="Asset/expo2.jpg" alt="">
+        <div class="detail">
+       <h4 class="detail1">Les ventes se terminent bientot</h4>
+       <h4>Atelier avec les enfants " Initiation a la peinture "</h4>
+       <h5>aujourd’hui a 11h jusqu'a 22h</h5> 
+      <h5>Libre</h5>
+    </div>
+  </div>
+  <div class="presentation concert">
+        <img class="expo1" src="Asset/expo2.jpg" alt="">
+        <div class="detail">
+       <h4 class="detail1">Les ventes se terminent bientot</h4>
+       <h4>Atelier avec les enfants " Initiation a la peinture "</h4>
+       <h5>aujourd’hui a 11h jusqu'a 22h</h5> 
+      <h5>Libre</h5>
+    </div>
+    </div>
+</div> 
+<!-- fin du container  -->
+<div class="container ">
+    <div class="presentation vernissage">
+        <img class="expo1" src="Asset/expo3.jpg" alt="">
+        <div class="detail">
+       <h4 class="detail1">Les ventes se terminent bientot</h4>
+       <h4>Atelier avec les enfants " Initiation a la peinture "</h4>
+       <h5>aujourd’hui a 11h jusqu'a 22h</h5> 
+      <h5>Libre</h5>
+    </div>
+  </div>
+  <div class="presentation vernissage">
+        <img class="expo1" src="Asset/expo3.jpg" alt="">
+        <div class="detail">
+       <h4 class="detail1">Les ventes se terminent bientot</h4>
+       <h4>Atelier avec les enfants " Initiation a la peinture "</h4>
+       <h5>aujourd’hui a 11h jusqu'a 22h</h5> 
+      <h5>Libre</h5>
+    </div>
+    </div>
+</div> 
+<!-- fin du container  -->
+<div class="container">
+    <div class="presentation exposition">
+        <img class="expo1" src="Asset/expo4.jpg" alt="">
+        <div class="detail">
+       <h4 class="detail1">Les ventes se terminent bientot</h4>
+       <h4>Atelier avec les enfants " Initiation a la peinture "</h4>
+       <h5>aujourd’hui a 11h jusqu'a 22h</h5> 
+      <h5>Libre</h5>
+    </div>
+  </div>
+  <div class="presentation exposition">
+        <img class="expo1" src="Asset/expo4.jpg" alt="">
+        <div class="detail">
+       <h4 class="detail1">Les ventes se terminent bientot</h4>
+       <h4>Atelier avec les enfants " Initiation a la peinture "</h4>
+       <h5>aujourd’hui a 11h jusqu'a 22h</h5> 
+      <h5>Libre</h5>
+    </div>
+    </div>
+</div> 
+</body>
+</html>
